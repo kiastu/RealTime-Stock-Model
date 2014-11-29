@@ -28,16 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.marketClosedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openMarket = new System.Windows.Forms.ToolStripMenuItem();
             this.closeMarket = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.watchMenu = new System.Windows.Forms.ToolStripMenuItem();
-            this.stockStateSummaryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.marketByOrderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.marketByPriceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sssMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.marketByOrder = new System.Windows.Forms.ToolStripMenuItem();
+            this.marketByPrice = new System.Windows.Forms.ToolStripMenuItem();
             this.ordersMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.bid = new System.Windows.Forms.ToolStripMenuItem();
             this.ask = new System.Windows.Forms.ToolStripMenuItem();
@@ -46,21 +46,21 @@
             this.windowsTileHorizontal = new System.Windows.Forms.ToolStripMenuItem();
             this.windowsTileVertical = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.menuStrip1.SuspendLayout();
+            this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
-            // menuStrip1
+            // menuStrip
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.marketClosedToolStripMenuItem,
             this.watchMenu,
             this.ordersMenu,
             this.windowsMenu});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(823, 24);
-            this.menuStrip1.TabIndex = 1;
-            this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip.Name = "menuStrip";
+            this.menuStrip.Size = new System.Drawing.Size(823, 24);
+            this.menuStrip.TabIndex = 1;
+            this.menuStrip.Text = "menuStrip1";
             // 
             // marketClosedToolStripMenuItem
             // 
@@ -102,31 +102,31 @@
             // watchMenu
             // 
             this.watchMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.stockStateSummaryToolStripMenuItem,
-            this.marketByOrderToolStripMenuItem,
-            this.marketByPriceToolStripMenuItem});
+            this.sssMenu,
+            this.marketByOrder,
+            this.marketByPrice});
             this.watchMenu.Name = "watchMenu";
             this.watchMenu.Size = new System.Drawing.Size(53, 20);
             this.watchMenu.Text = "Watch";
             this.watchMenu.Visible = false;
             // 
-            // stockStateSummaryToolStripMenuItem
+            // sssMenu
             // 
-            this.stockStateSummaryToolStripMenuItem.Name = "stockStateSummaryToolStripMenuItem";
-            this.stockStateSummaryToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
-            this.stockStateSummaryToolStripMenuItem.Text = "Stock State Summary";
+            this.sssMenu.Name = "sssMenu";
+            this.sssMenu.Size = new System.Drawing.Size(186, 22);
+            this.sssMenu.Text = "Stock State Summary";
             // 
-            // marketByOrderToolStripMenuItem
+            // marketByOrder
             // 
-            this.marketByOrderToolStripMenuItem.Name = "marketByOrderToolStripMenuItem";
-            this.marketByOrderToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
-            this.marketByOrderToolStripMenuItem.Text = "Market By Order";
+            this.marketByOrder.Name = "marketByOrder";
+            this.marketByOrder.Size = new System.Drawing.Size(186, 22);
+            this.marketByOrder.Text = "Market By Order";
             // 
-            // marketByPriceToolStripMenuItem
+            // marketByPrice
             // 
-            this.marketByPriceToolStripMenuItem.Name = "marketByPriceToolStripMenuItem";
-            this.marketByPriceToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
-            this.marketByPriceToolStripMenuItem.Text = "Market By Price";
+            this.marketByPrice.Name = "marketByPrice";
+            this.marketByPrice.Size = new System.Drawing.Size(186, 22);
+            this.marketByPrice.Text = "Market By Price";
             // 
             // ordersMenu
             // 
@@ -195,13 +195,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(823, 483);
-            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.menuStrip);
             this.IsMdiContainer = true;
-            this.MainMenuStrip = this.menuStrip1;
+            this.MainMenuStrip = this.menuStrip;
             this.Name = "StockSecuritiesExchange";
             this.Text = "Stock Securities Exchange";
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.menuStrip.ResumeLayout(false);
+            this.menuStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -209,7 +209,7 @@
 
         #endregion
 
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.MenuStrip menuStrip;
         private System.Windows.Forms.ToolStripMenuItem marketClosedToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem watchMenu;
         private System.Windows.Forms.ToolStripMenuItem ordersMenu;
@@ -224,9 +224,9 @@
         private System.Windows.Forms.ToolStripMenuItem closeMarket;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem stockStateSummaryToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem marketByOrderToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem marketByPriceToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sssMenu;
+        private System.Windows.Forms.ToolStripMenuItem marketByOrder;
+        private System.Windows.Forms.ToolStripMenuItem marketByPrice;
     }
 }
 

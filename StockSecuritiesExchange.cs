@@ -42,11 +42,20 @@ namespace dkong22_Assignment_2
             this.watchMenu.Visible = false;
             this.ordersMenu.Visible = false;
         }
+        private void watchMenuClick(object sender, EventArgs e)
+        {
+
+        }
 
         private void openMarket_Click(object sender, EventArgs e)
         {
             this.watchMenu.Visible = true;
             this.ordersMenu.Visible = true;
+
+            //prep dynamic menus.
+            ToolStripMenuItem StockStateSummaryMenu = new ToolStripMenuItem("Microsoft", null, watchMenuClick);
+            this.sssMenu.DropDownItems.Add(StockStateSummaryMenu);
+
         }
 
         private void windowsTileVertical_Click(object sender, EventArgs e)
