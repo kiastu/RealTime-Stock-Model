@@ -1,0 +1,14 @@
+D:\DDISK\David\Workspaces\SE3352\dkong22_Assignment_2\dkong22_Assignment_2\bin\Debug\dkong22_Assignment_2.exe.config
+D:\DDISK\David\Workspaces\SE3352\dkong22_Assignment_2\dkong22_Assignment_2\bin\Debug\dkong22_Assignment_2.exe
+D:\DDISK\David\Workspaces\SE3352\dkong22_Assignment_2\dkong22_Assignment_2\bin\Debug\dkong22_Assignment_2.pdb
+D:\DDISK\David\Workspaces\SE3352\dkong22_Assignment_2\dkong22_Assignment_2\obj\Debug\dkong22_Assignment_2.csprojResolveAssemblyReference.cache
+D:\DDISK\David\Workspaces\SE3352\dkong22_Assignment_2\dkong22_Assignment_2\obj\Debug\dkong22_Assignment_2.StockSecuritiesExchange.resources
+D:\DDISK\David\Workspaces\SE3352\dkong22_Assignment_2\dkong22_Assignment_2\obj\Debug\dkong22_Assignment_2.Properties.Resources.resources
+D:\DDISK\David\Workspaces\SE3352\dkong22_Assignment_2\dkong22_Assignment_2\obj\Debug\dkong22_Assignment_2.csproj.GenerateResource.Cache
+D:\DDISK\David\Workspaces\SE3352\dkong22_Assignment_2\dkong22_Assignment_2\obj\Debug\dkong22_Assignment_2.exe
+D:\DDISK\David\Workspaces\SE3352\dkong22_Assignment_2\dkong22_Assignment_2\obj\Debug\dkong22_Assignment_2.pdb
+D:\DDISK\David\Workspaces\SE3352\dkong22_Assignment_2\dkong22_Assignment_2\obj\Debug\dkong22_Assignment_2.BuyForm.resources
+D:\DDISK\David\Workspaces\SE3352\dkong22_Assignment_2\dkong22_Assignment_2\obj\Debug\dkong22_Assignment_2.SellForm.resources
+D:\DDISK\David\Workspaces\SE3352\dkong22_Assignment_2\dkong22_Assignment_2\obj\Debug\dkong22_Assignment_2.MarketByOrder.resources
+D:\DDISK\David\Workspaces\SE3352\dkong22_Assignment_2\dkong22_Assignment_2\obj\Debug\dkong22_Assignment_2.MarketByPrice.resources
+D:\DDISK\David\Workspaces\SE3352\dkong22_Assignment_2\dkong22_Assignment_2\obj\Debug\dkong22_Assignment_2.StockStateSummary.resources
