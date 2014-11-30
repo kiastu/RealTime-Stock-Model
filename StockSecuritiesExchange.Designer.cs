@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.menuStrip = new System.Windows.Forms.MenuStrip();
-            this.marketClosedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.marketMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.openMarket = new System.Windows.Forms.ToolStripMenuItem();
             this.closeMarket = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.watchMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.sssMenu = new System.Windows.Forms.ToolStripMenuItem();
-            this.marketByOrder = new System.Windows.Forms.ToolStripMenuItem();
-            this.marketByPrice = new System.Windows.Forms.ToolStripMenuItem();
+            this.mboMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.mbpMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.ordersMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.bid = new System.Windows.Forms.ToolStripMenuItem();
             this.ask = new System.Windows.Forms.ToolStripMenuItem();
@@ -52,7 +52,7 @@
             // menuStrip
             // 
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.marketClosedToolStripMenuItem,
+            this.marketMenu,
             this.watchMenu,
             this.ordersMenu,
             this.windowsMenu});
@@ -62,21 +62,21 @@
             this.menuStrip.TabIndex = 1;
             this.menuStrip.Text = "menuStrip1";
             // 
-            // marketClosedToolStripMenuItem
+            // marketMenu
             // 
-            this.marketClosedToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.marketMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.openMarket,
             this.closeMarket,
             this.toolStripSeparator2,
             this.exitToolStripMenuItem});
-            this.marketClosedToolStripMenuItem.Name = "marketClosedToolStripMenuItem";
-            this.marketClosedToolStripMenuItem.Size = new System.Drawing.Size(124, 20);
-            this.marketClosedToolStripMenuItem.Text = "Market<<Closed>>";
+            this.marketMenu.Name = "marketMenu";
+            this.marketMenu.Size = new System.Drawing.Size(124, 20);
+            this.marketMenu.Text = "Market<<Closed>>";
             // 
             // openMarket
             // 
             this.openMarket.Name = "openMarket";
-            this.openMarket.Size = new System.Drawing.Size(152, 22);
+            this.openMarket.Size = new System.Drawing.Size(103, 22);
             this.openMarket.Text = "Open";
             this.openMarket.Click += new System.EventHandler(this.openMarket_Click);
             // 
@@ -84,27 +84,27 @@
             // 
             this.closeMarket.Enabled = false;
             this.closeMarket.Name = "closeMarket";
-            this.closeMarket.Size = new System.Drawing.Size(152, 22);
+            this.closeMarket.Size = new System.Drawing.Size(103, 22);
             this.closeMarket.Text = "Close";
             this.closeMarket.Click += new System.EventHandler(this.closeMarket_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(100, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             // 
             // watchMenu
             // 
             this.watchMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.sssMenu,
-            this.marketByOrder,
-            this.marketByPrice});
+            this.mboMenu,
+            this.mbpMenu});
             this.watchMenu.Name = "watchMenu";
             this.watchMenu.Size = new System.Drawing.Size(53, 20);
             this.watchMenu.Text = "Watch";
@@ -115,18 +115,19 @@
             this.sssMenu.Name = "sssMenu";
             this.sssMenu.Size = new System.Drawing.Size(186, 22);
             this.sssMenu.Text = "Stock State Summary";
+            this.sssMenu.Click += new System.EventHandler(this.sssMenu_Click);
             // 
-            // marketByOrder
+            // mboMenu
             // 
-            this.marketByOrder.Name = "marketByOrder";
-            this.marketByOrder.Size = new System.Drawing.Size(186, 22);
-            this.marketByOrder.Text = "Market By Order";
+            this.mboMenu.Name = "mboMenu";
+            this.mboMenu.Size = new System.Drawing.Size(186, 22);
+            this.mboMenu.Text = "Market By Order";
             // 
-            // marketByPrice
+            // mbpMenu
             // 
-            this.marketByPrice.Name = "marketByPrice";
-            this.marketByPrice.Size = new System.Drawing.Size(186, 22);
-            this.marketByPrice.Text = "Market By Price";
+            this.mbpMenu.Name = "mbpMenu";
+            this.mbpMenu.Size = new System.Drawing.Size(186, 22);
+            this.mbpMenu.Text = "Market By Price";
             // 
             // ordersMenu
             // 
@@ -142,16 +143,16 @@
             // bid
             // 
             this.bid.Name = "bid";
-            this.bid.Size = new System.Drawing.Size(93, 22);
+            this.bid.Size = new System.Drawing.Size(152, 22);
             this.bid.Text = "Bid";
-            this.bid.Click += new System.EventHandler(this.bidToolStripMenuItem1_Click);
+            this.bid.Click += new System.EventHandler(this.bidOrder);
             // 
             // ask
             // 
             this.ask.Name = "ask";
-            this.ask.Size = new System.Drawing.Size(93, 22);
+            this.ask.Size = new System.Drawing.Size(152, 22);
             this.ask.Text = "Ask";
-            this.ask.Click += new System.EventHandler(this.ask_Click);
+            this.ask.Click += new System.EventHandler(this.askOrder);
             // 
             // windowsMenu
             // 
@@ -210,7 +211,7 @@
         #endregion
 
         private System.Windows.Forms.MenuStrip menuStrip;
-        private System.Windows.Forms.ToolStripMenuItem marketClosedToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem marketMenu;
         private System.Windows.Forms.ToolStripMenuItem watchMenu;
         private System.Windows.Forms.ToolStripMenuItem ordersMenu;
         private System.Windows.Forms.ToolStripMenuItem bid;
@@ -225,8 +226,8 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sssMenu;
-        private System.Windows.Forms.ToolStripMenuItem marketByOrder;
-        private System.Windows.Forms.ToolStripMenuItem marketByPrice;
+        private System.Windows.Forms.ToolStripMenuItem mboMenu;
+        private System.Windows.Forms.ToolStripMenuItem mbpMenu;
     }
 }
 

@@ -55,6 +55,7 @@
             this.submit.TabIndex = 14;
             this.submit.Text = "Submit";
             this.submit.UseVisualStyleBackColor = true;
+            this.submit.Click += new System.EventHandler(this.submit_Click);
             // 
             // buyPrice
             // 
@@ -105,7 +106,7 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "Select Share to Buy";
             // 
-            // BuyOrder
+            // BuyForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -118,7 +119,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "BuyOrder";
+            this.Name = "BuyForm";
             this.Text = "BuyOrder";
             this.ResumeLayout(false);
             this.PerformLayout();

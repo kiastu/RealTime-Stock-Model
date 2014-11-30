@@ -33,6 +33,8 @@
             this.open_price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.last_sale = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.change_net_percent = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.changeIcon = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Change_percent = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.share_volume = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.datagrid)).BeginInit();
             this.SuspendLayout();
@@ -45,11 +47,13 @@
             this.open_price,
             this.last_sale,
             this.change_net_percent,
+            this.changeIcon,
+            this.Change_percent,
             this.share_volume});
             this.datagrid.EnableHeadersVisualStyles = false;
             this.datagrid.Location = new System.Drawing.Point(2, 1);
             this.datagrid.Name = "datagrid";
-            this.datagrid.Size = new System.Drawing.Size(545, 391);
+            this.datagrid.Size = new System.Drawing.Size(745, 396);
             this.datagrid.TabIndex = 1;
             this.datagrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagrid_CellContentClick);
             // 
@@ -70,8 +74,20 @@
             // 
             // change_net_percent
             // 
-            this.change_net_percent.HeaderText = "Change Net -%";
+            this.change_net_percent.HeaderText = "Change Net";
             this.change_net_percent.Name = "change_net_percent";
+            // 
+            // changeIcon
+            // 
+            this.changeIcon.HeaderText = "";
+            this.changeIcon.Name = "changeIcon";
+            this.changeIcon.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.changeIcon.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // Change_percent
+            // 
+            this.Change_percent.HeaderText = "Change %";
+            this.Change_percent.Name = "Change_percent";
             // 
             // share_volume
             // 
@@ -82,7 +98,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(549, 393);
+            this.ClientSize = new System.Drawing.Size(753, 405);
             this.Controls.Add(this.datagrid);
             this.Name = "StockStateSummary";
             this.Text = "StockStateSummary";
@@ -98,6 +114,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn open_price;
         private System.Windows.Forms.DataGridViewTextBoxColumn last_sale;
         private System.Windows.Forms.DataGridViewTextBoxColumn change_net_percent;
+        private System.Windows.Forms.DataGridViewImageColumn changeIcon;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Change_percent;
         private System.Windows.Forms.DataGridViewTextBoxColumn share_volume;
     }
 }
